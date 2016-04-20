@@ -1,0 +1,58 @@
+@import "_variables";
+
+.banner {
+  height: 100vh;
+  display: flex;
+  box-pack: center;
+  min-height: 500px;
+  box-align: center;
+  align-items: center;
+  transition: opacity 1s;
+  justify-content: center;
+}
+
+.wrap {
+  width: 660px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 7rem;
+  font-weight: 100;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 3rem;
+  font-weight: 100;
+
+  &:after {
+    height: 1px;
+    content: "";
+    width: 100px;
+    display: block;
+    margin-top: 0.5rem;
+    background: black;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin: 1rem 0 3rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 1em 0;
+}
