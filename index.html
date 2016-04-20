@@ -28,14 +28,14 @@
     <div class="container">
       <a class="logo">G</a>
       <nav>
-        <a href="#work" class="js-scroll-to-btn">Work</a><!--
-        --><a href="#about" class="js-scroll-to-btn">About</a>
+        <a class="nav-work" href="#work" class="js-scroll-to-btn">Work</a><!--
+        --><a class="nav-about" href="#about" class="js-scroll-to-btn">About</a>
       </nav>
     </div>
   </header>
 
   <!-- Banner -->
-  <div class="banner">
+  <div class="valign-middle banner">
     <div class="wrap">
       <h1>Girish</h1>
       <h3>
@@ -102,11 +102,11 @@
   </section>
 
   <!-- About -->
-  <section id="about">
-    <div class="container">
+  <div id="about" class="valign-middle about">
+    <div class="wrap">
       <h2>About Me</h2>
       <p>
-        Welcome to my profile site!  I focus on doing what I love - making things with my own hands. Web is my favorite platform for realizing new ideas. I enjoy coding HTML/CSS and working with vectors and 3D modeling in my free time.
+        I focus on doing what I love - making things with my own hands. Web is my favorite platform for realizing new ideas. I enjoy coding HTML/CSS and working with vectors and 3D modeling in my free time.
       </p>
       <p>
         Have <b id="experiences"><script>document.write(new Date().getFullYear() - 2007)</script>+ years</b> of work experience in UI/UX, Web Design and Frontend Development. Currently working as a <strong>Creative Head</strong> for <a href="http://codemancers.com" target="_blank">Codemancers</a> Technologies Pvt. Ltd. Bangalore, India. previously worked with <a href="http://www.castlerockresearch.in/" target="_blank">Castlerock</a> and <a href="http://agiline.com/" target="_blank">Agiline</a>.
@@ -115,7 +115,7 @@
         The skills I have developed throughout the last couple of years, allow me for operating in different styles of creations. I always like doing things perfect. I am a perfectionist when it comes to pixel perfect designs or well documented code.
       </p>
     </div>
-  </section>
+  </div>
 
   <!-- Footer -->
   <footer role="content-info">
@@ -327,6 +327,26 @@
         if (e.keyCode == 27) $('.modal').hide();   // esc
         $("body").removeClass("overflow-hidden");
       });
+    });
+
+    $(window).scroll(function() {
+      if (jQuery("#work")[0].getBoundingClientRect().top - 53 < 0) {
+        jQuery(".nav-work").addClass("active");
+      }
+      else {
+        jQuery(".nav-work").removeClass("active");
+      }
+
+      if (jQuery("#work")[0].getBoundingClientRect().bottom - 53 < 0) {
+        jQuery(".nav-work").removeClass("active");
+      }
+
+      if (jQuery("#about")[0].getBoundingClientRect().top - 53 < 0) {
+        jQuery(".nav-about").addClass("active");
+      }
+      else {
+        jQuery(".nav-about").removeClass("active");
+      }
     });
   </script>
 </body>

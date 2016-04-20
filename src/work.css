@@ -75,26 +75,26 @@ section .container {
     background: #333;
     margin-top: 50px;
   }
+}
 
-  .modal-body {
-    padding: 50px;
-    max-width: 860px;
-    margin: 50px auto;
-    background-color: #eee;
-  }
+.modal-body {
+  padding: 50px;
+  max-width: 860px;
+  margin: 50px auto;
+  background-color: #eee;
+}
 
-  .close {
-    top: 20px;
-    right: 20px;
-    color: white;
-    position: fixed;
-    font-size: 40px;
-    line-height: 20px;
-    text-decoration: none;
+.close {
+  top: 20px;
+  right: 20px;
+  color: white;
+  position: fixed;
+  font-size: 40px;
+  line-height: 20px;
+  text-decoration: none;
 
-    &:hover {
-      color: red;
-    }
+  &:hover {
+    color: yellow;
   }
 }
 

@@ -104,7 +104,7 @@ nav a.active {
   color: #000;
   box-shadow: inset 0 5px 0 0 #000;
 }
-.banner {
+.valign-middle {
   height: 100vh;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,9 +121,16 @@ nav a.active {
           justify-content: center;
 }
 
+.banner {
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+}
+
 .wrap {
   width: 660px;
-  text-align: center;
 }
 
 h1 {
@@ -138,6 +145,7 @@ h2 {
   font-size: 48px;
   font-size: 3rem;
   font-weight: 100;
+  text-align: center;
 }
 
 h2:after {
@@ -145,9 +153,9 @@ h2:after {
   content: "";
   width: 100px;
   display: block;
-  margin-top: 8px;
-  margin-top: 0.5rem;
   background: black;
+  margin: 8px auto auto;
+  margin: 0.5rem auto auto;
 }
 
 h3 {
@@ -262,14 +270,14 @@ section .container {
   margin-top: 50px;
 }
 
-.modal .modal-body {
+.modal-body {
   padding: 50px;
   max-width: 860px;
   margin: 50px auto;
   background-color: #eee;
 }
 
-.modal .close {
+.close {
   top: 20px;
   right: 20px;
   color: white;
@@ -279,8 +287,8 @@ section .container {
   text-decoration: none;
 }
 
-.modal .close:hover {
-  color: red;
+.close:hover {
+  color: yellow;
 }
 
 .overflow-hidden {

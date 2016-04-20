@@ -1,6 +1,6 @@
 @import "_variables";
 
-.banner {
+.valign-middle {
   height: 100vh;
   display: flex;
   box-pack: center;
@@ -11,9 +11,16 @@
   justify-content: center;
 }
 
+.banner {
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+}
+
 .wrap {
   width: 660px;
-  text-align: center;
 }
 
 h1 {
@@ -26,14 +33,15 @@ h2 {
   margin-top: 0;
   font-size: 3rem;
   font-weight: 100;
+  text-align: center;
 
   &:after {
     height: 1px;
     content: "";
     width: 100px;
     display: block;
-    margin-top: 0.5rem;
     background: black;
+    margin: 0.5rem auto auto;
   }
 }
 
