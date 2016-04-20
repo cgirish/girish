@@ -158,6 +158,15 @@ h3 {
   margin: 1rem 0 3rem 0;
 }
 
+h3 small {
+  font-size: 60%;
+  color: #999;
+  display: block;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
 h4 {
   font-size: 32px;
   font-size: 2rem;

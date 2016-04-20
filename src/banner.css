@@ -41,6 +41,14 @@ h3 {
   font-size: 2.5rem;
   font-weight: 100;
   margin: 1rem 0 3rem 0;
+
+  small {
+    color: #999;
+    font-size: 60%;
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: normal;
+  }
 }
 
 h4 {
