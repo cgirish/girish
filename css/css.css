@@ -309,10 +309,6 @@ footer p {
   text-decoration: none;
 }
 
-.icon:hover svg {
-  fill: $link;
-}
-
 .icon + .separator {
   width: 1px;
   height: 28px;

@@ -23,10 +23,6 @@ footer {
   display: inline-block;
   text-decoration: none;
 
-  &:hover svg {
-    fill: $link;
-  }
-
   & + .separator {
     width: 1px;
     height: 28px;
