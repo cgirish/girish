@@ -85,6 +85,15 @@
 
   <!-- SVG Icons -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <!-- Logo -->
+    <symbol id="logo" viewBox="0 0 32 32">
+      <rect class="fill" width="32" height="32" cx="0" cy="0" />
+      <path fill="#fff" d="M28 12 L20 4 L28 4 Z" />
+      <path fill="#fff" d="M20 28 L28 28 L28 20 Z" />
+      <path fill="#fff" d="M4 28 L12 28 L4 20 Z" />
+      <path fill="#fff" d="M4 12 L12 4 L4 4 Z" />
+      <path fill="#fff" d="M13 23 L19 23 L23 19 L23 18 L16 18 L16 14 L23 14 L23 13 L19 9 L13 9 L9 13 L9 19 Z" />
+    </symbol>
     <!-- Deviantart -->
     <symbol id="de" viewBox="0 0 20 20"><path d="M10 0C4.5 0 0 4.5 0 10 0 15.5 4.5 20 10 20 15.5 20 20 15.5 20 10 20 4.5 15.5 0 10 0zm1.3 5 1.8 0 0 1.8-1.8 3.5 0.2 0.2 1.7 0 0 2.5-3.1 0L9.8 13.2 8.9 14.8 8.7 15l-1.8 0 0-1.8L8.8 9.7 8.6 9.5l-1.7 0 0-2.5 3.1 0 0.3-0.2 0.8-1.6z"/></symbol>
     <!-- Github -->
@@ -102,7 +111,9 @@
   <!-- Header -->
   <header>
     <div class="container clearfix">
-      <a class="logo">G</a>
+      <a class="logo" href="#">
+        <svg width="32" height="32"><use xlink:href="#logo"></use></svg>
+      </a>
       <nav>
         <a class="nav-work" href="#work" class="js-scroll-to-btn">Work</a><!--
         --><a class="nav-about" href="#about" class="js-scroll-to-btn">About</a>
